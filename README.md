@@ -16,8 +16,8 @@
 <h2>How to use:</h2>
 
 <ol>
-    <li>Setup django admin first, see https://docs.djangoproject.com/en/dev/ref/contrib/admin/ .</li>
-    <li>Clone the project to you workspace, copy the template folder to you django project root, so the template located the same directory as settings.py. </li>
+    <li>Setup django admin first, link: <a href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/">https://docs.djangoproject.com/en/dev/ref/contrib/admin/</a> .</li>
+    <li>Clone the project to you workspace, copy the template folder to you django project root, so the template will locates at the same directory as settings.py. </li>
     <li>Modify settings:
         <ol>
             <li>Add 
@@ -27,7 +27,7 @@
                 to TEMPLATE_DIRS in settings.py.
             </li>
             <li>
-                Add additional url rule to urls.py, we use it in hosting static resouce in admin templates:
+                Add additional url rule to urls.py, this rule is used for hosting static resouce in admin templates:
                 <code >
                 (r'^admins/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/your_project_directory/project_name/project_folder/templates/admin/static', 'show_indexes': True}),
                 </code>
@@ -38,5 +38,5 @@
 
 <h2>Customize Bootstrap</h2>
 
-<div>BootStrap css is under /template/admin/static/css, just rebuild you own bootstrap style, and rewrite bootstrap.css, if might also have to modify rewrite.css.</div>
+<div>BootStrap css locates at /template/admin/static/css, rewrite styles and rebuild, you can also modify rewrite.css.</div>
 
