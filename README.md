@@ -31,6 +31,7 @@
                 <pre >
                 (r'^admins/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/your_project_directory/project_name/project_folder/templates/admin/static', 'show_indexes': True}),
                 </pre>
+                Github hides '< path >', so you need to add it after (?P (remove the spaces around).
             </li>
         <ol>
     </li>
