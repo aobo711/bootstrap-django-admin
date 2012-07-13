@@ -11,6 +11,10 @@
     <img src="https://lh4.googleusercontent.com/-CirIZtAqdRI/T2v-QI6ikWI/AAAAAAAAABQ/kQz1jEtXPuE/s394/list.png" />
     <br />
     <img src="https://lh4.googleusercontent.com/-ZqZb1Dj4tqc/T2v-PA3ioGI/AAAAAAAAABE/2h04vED09Sc/s543/change_password.png" />
+    <br />
+    <img src="https://lh4.googleusercontent.com/-x-NONjAmMes/T2v-PqgeaTI/AAAAAAAAABI/4GJNPass5Ck/w577-h444-k/add.png" />
+    <br />
+    <img src="https://lh5.googleusercontent.com/-eEhjFVFdnSk/T__HuIm9e5I/AAAAAAAAADs/v2Eb_FQn-yY/w527-h256-n-k/Untitled-2.png" />
 </div>
 
 <h2>How to use:</h2>
