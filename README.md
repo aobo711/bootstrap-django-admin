@@ -28,9 +28,9 @@
             </li>
             <li>
                 Add additional url rule to urls.py, this rule is used for hosting static resouce in admin templates:
-                <code >
+                <pre >
                 (r'^admins/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/your_project_directory/project_name/project_folder/templates/admin/static', 'show_indexes': True}),
-                </code>
+                </pre>
             </li>
         <ol>
     </li>
