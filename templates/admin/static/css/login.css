@@ -1,11 +1,12 @@
 .login-wp{
-    float: right;
-    margin-right: 10%;
+    width:500px;
+    margin: 100px auto;
+    
 }
 .login-form{
     width:200px;
     padding:20px 50px;
-    margin:100px auto 0;
+    margin:0 auto 0;
 }
 .login-form .title{
     margin-bottom:10px;
