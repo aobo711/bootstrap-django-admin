@@ -85,15 +85,14 @@
       {% endblock %}
       {% block pagination %}{% pagination cl %}{% endblock %}
       </form>
-      
-      {% block filters %}
-        {% if cl.has_filters %}
-          <div class="changelist-filter well" style="padding: 9px 0;">
-            <h3 class="filter-title">{% trans 'Filter' %}</h3>
-            {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
-          </div>
-        {% endif %}
-      {% endblock %}
     </div>
   </div>
+{% endblock %}
+{% block sidebar %}
+{% if cl.has_filters %}
+  <div class="changelist-filter well" style="padding: 9px 0;">
+    <h3 class="filter-title">{% trans 'Filter' %}</h3>
+    {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
+  </div>
+{% endif %}
 {% endblock %}

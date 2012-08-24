@@ -1,20 +1,20 @@
 <h2>Beautiful Django admin template styled with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></h2>
 
+<div>Bootstrap 2.0 Upgraded.</div>
 <div>Works on Django 1.3 and above.</div>
 
 <h2>Screenshots:</h2>
 <div >
     <img src="https://lh5.googleusercontent.com/-YPSx9j0czfg/T2v-QhxTbZI/AAAAAAAAABc/YLo_5nRp6Zo/s433/login.png" />
     <br />
-    <img src="https://lh5.googleusercontent.com/-J5YFiMBq6Tc/T2v-PKx3TWI/AAAAAAAAABA/aJWHPIQ7c7s/s1063/home.png" />
+    <img src="https://lh4.googleusercontent.com/-Oc1soVl6QF0/UDcW3OpYwFI/AAAAAAAAAFA/E22PV_sbH24/s741/login.png" />
     <br />
-    <img src="https://lh4.googleusercontent.com/-CirIZtAqdRI/T2v-QI6ikWI/AAAAAAAAABQ/kQz1jEtXPuE/s394/list.png" />
+    <img src="https://lh4.googleusercontent.com/-1YuZPYz9MzA/UDcW19Vl9rI/AAAAAAAAAE4/W75RsC_htkM/s741/list.png" />
     <br />
-    <img src="https://lh4.googleusercontent.com/-ZqZb1Dj4tqc/T2v-PA3ioGI/AAAAAAAAABE/2h04vED09Sc/s543/change_password.png" />
+    <img src="https://lh6.googleusercontent.com/-HUFdhCXBuPE/UDcWy_S3zrI/AAAAAAAAAEo/z8_elmA_HAc/s741/change.png" />
     <br />
-    <img src="https://lh4.googleusercontent.com/-x-NONjAmMes/T2v-PqgeaTI/AAAAAAAAABI/4GJNPass5Ck/w577-h444-k/add.png" />
+    <img src="https://lh5.googleusercontent.com/-o6kjfc7p4yk/UDcW0jd9nuI/AAAAAAAAAEw/g2dmD3h4AUU/s567/add.png" />
     <br />
-    <img src="https://lh5.googleusercontent.com/-eEhjFVFdnSk/T__HuIm9e5I/AAAAAAAAADs/v2Eb_FQn-yY/w527-h256-n-k/Untitled-2.png" />
 </div>
 
 <h2>How to use:</h2>

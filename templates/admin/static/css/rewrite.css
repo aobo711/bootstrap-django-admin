@@ -83,14 +83,19 @@ select{
 }
 #changelist-form{
     float: left;
-    width:700px;
+    width:100%;
 }
 .changelist-filter{
     float:right;
-    width:250px;
-    margin-right:-180px;
+    width:100%;
 }
 .filter-title{
     padding:0 0 0 15px;
     margin-bottom:10px;
+}
+.selector .selector-available input{
+    width:220px!important;
+}
+.selector .selector-available h2,.selector-available h2, .selector-chosen h2{
+    margin:0;
 }

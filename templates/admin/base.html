@@ -1,26 +1,105 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+{% load url from future %}<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>{% block title %}设计奖管理系统 - Wandoujia.com {% endblock %}</title>
-        <link rel="stylesheet" href="/htdocs/css/reset.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="/htdocs/css/style.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="/htdocs/css/invalid.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="/htdocs/css/cleditor.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="/htdocs/css/datepicker.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="/htdocs/scripts/jquery-1.4.2.min.js">
-        </script>
-		<script type="text/javascript" src="/htdocs/scripts/date.js">
-        </script>
-		<script type="text/javascript" src="/htdocs/scripts/bigframe.js">
-        </script>
-		<script type="text/javascript" src="/htdocs/scripts/datepicker.js">
-        </script>
-		<script type="text/javascript" src="/htdocs/scripts/cleditor.js">
-        </script>
-        <script type="text/javascript" src="/htdocs/scripts/configuration.js">
-        </script>
-        
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="/admins/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="/admins/css/rewrite.css" />
+        {% block extrastyle %}{% endblock %}
+        {% block extrahead %}{% endblock %}
+        {% block blockbots %}
+        <meta name="robots" content="NONE,NOARCHIVE" />
+        {% endblock %}
     </head>
-    {% block body %}{% endblock %}
+    {% load i18n %}
+    <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
+        {% if not is_popup %}
+        {% if user.is_active and user.is_staff %}
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            {% block userlinks %}
+                            <li class="active">
+                                <a href="javascript:;"> {% trans 'Welcome,' %}{% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}</a>
+                            </li>
+                            {% url 'django-admindocs-docroot' as docsroot %}
+                            {% if docsroot %}
+                            <li>
+                                <a href="{{ docsroot }}">{% trans 'Documentation' %}</a>
+                            </li>
+                            {% endif %}
+
+                            {% url 'admin:password_change' as password_change_url %}
+                            {% if password_change_url %}
+                            <li>
+                                <a href="{{ password_change_url }}"> {% else %} <a href="{{ root_path }}password_change/">
+                            </li>
+                            {% endif %}
+                            {% trans 'Change password' %}</a>
+
+                            {% url 'admin:logout' as logout_url %}
+                            {% if logout_url %}
+                            <li>
+                                <a href="{{ logout_url }}"> {% else %} <a href="{{ root_path }}logout/">
+                            </li>
+                            {% endif %}
+                            {% trans 'Log out' %} </a>
+                            {% endblock %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% endif %}
+        
+        {% block mainbody %}
+        <div class="main {% block coltype %}colM{% endblock %}">
+
+            {% if messages %}
+            <div class="alert alert-success">
+                <ul class="messagelist">
+                    {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                        {{ message }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            
+            {% block breadcrumbs %}
+            <ul class="breadcrumb">
+                <li><a href="/">{% trans 'Home' %}</a> <span class="divider">/</span></li>
+                <li class="active">{% if title %} {{ title }}{% endif %}</li>
+            </ul>
+            {% endblock %}
+            
+            {% block pretitle %}{% endblock %}
+            {% block content_title %}
+                {% if title %}  
+                <div class="page-header">
+                    <h3>{{ title }}</h3>
+                </div>
+                {% endif %}
+            {% endblock %}
+            <div class="row-fluid show-grid">
+                <div class="span9">
+                    {% block content %}
+                        {% block object-tools %}{% endblock %}
+                        {{ content }}
+                    {% endblock %}
+                </div>
+                <div class="span3">
+                    {% block sidebar %}{% endblock %}
+                </div>
+            </div>
+            
+            {% block footer %}{% endblock %}
+        </div>
+        {% endblock %}
+    </body>
 </html>
