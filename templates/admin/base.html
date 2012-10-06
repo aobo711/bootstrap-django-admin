@@ -15,13 +15,14 @@
     <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
         {% if not is_popup %}
         {% if user.is_active and user.is_staff %}
-        <div class="navbar">
+        <div class="navbar navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">
+				<a class="brand" href="/">{% trans 'Home' %}</a>
                     <div class="nav-collapse">
                         <ul class="nav">
                             <li id="welcome" class="active">
-                                <a href="javascript:;"> {% trans 'Welcome,' %}{% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}</a>
+                                <a href="/admin"> {% trans 'Welcome,' %}{% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}</a>
                             </li>
                             {% url 'django-admindocs-docroot' as docsroot %}
                             {% if docsroot %}
