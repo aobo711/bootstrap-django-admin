@@ -26,7 +26,7 @@
         <ol>
             <li>Add 
                 <code>
-                    os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/')
+                    os.path.join(os.path.dirname(__file__), 'templates').replace('\\', '/')
                 </code>
                 to TEMPLATE_DIRS in settings.py.
             </li>
