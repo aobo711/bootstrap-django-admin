@@ -22,7 +22,7 @@
                     <div class="nav-collapse">
                         <ul class="nav">
                             <li id="welcome" class="active">
-                                <a href="/admin"> {% trans 'Welcome,' %}{% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}</a>
+                                <a href="/admin"> {% trans 'Welcome,' %} {% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}</a>
                             </li>
                             {% url 'django-admindocs-docroot' as docsroot %}
                             {% if docsroot %}
