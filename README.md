@@ -28,5 +28,5 @@
 
 <h2>Customize Bootstrap</h2>
 
-<div>BootStrap css locates at /template/admin/static/css, rewrite styles and rebuild, you can also modify rewrite.css.</div>
+<div>BootStrap css locates at <code>/admin_bootstrap/static/css</code>, rewrite styles and rebuild, you can also modify rewrite.css.</div>
 
