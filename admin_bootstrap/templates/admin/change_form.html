@@ -32,7 +32,7 @@
   <div class="object-tools">
     {% block object-tools-items %}
     <a href="history/" class="btn">{% trans "History" %}</a>
-    {% if has_absolute_url %}<li><a href="../../../r/{{ content_type_id }}/{{ object_id }}/" class="viewsitelink">{% trans "View on site" %}</a></li>{% endif%}
+    {% if has_absolute_url %}<a href="../../../r/{{ content_type_id }}/{{ object_id }}/" class="viewsitelink btn">{% trans "View on site" %}</a>{% endif%}
     {% endblock %}
   </div>
 {% endif %}{% endif %}
