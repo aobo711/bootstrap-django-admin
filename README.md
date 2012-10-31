@@ -17,13 +17,14 @@
     <br />
 </div>
 
-<h2>How to use:</h2>
+<h2>Get Started:</h2>
 
 <ol>
     <li>Setup django admin first, link: <a href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/">https://docs.djangoproject.com/en/dev/ref/contrib/admin/</a> .</li>
     <li>Put <code>admin_bootstrap</code> directory in your project directory or elsewhere in your <code>sys.path</code>.</li>
     <li>Add <code>admin_bootstrap</code> to <code>INSTALLED_APPS</code> in <code>settings.py</code>, before <code>django.contrib.admin</code>.</li>
-    <li>Run <code>./manage.py collectstatic</code></li>
+    <li>Modify <code>STATIC_ROOT</code> to <code>YOUR_PROJECT_ROOT/admin_bootstrap/static</code></li>
+    <li>Run <code>./manage.py collectstatic</code>(requested to collect static files at the destination location as <code>STATIC_ROOT</code>.)</li>
 </ol>
 
 <h2>Customize Bootstrap</h2>
