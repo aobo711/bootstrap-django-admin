@@ -1,7 +1,8 @@
 <h2>Beautiful Django admin template styled with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></h2>
+<div>Bootstrap 2.2 Upgraded.</div>
+<del>Bootstrap 2.0 Upgraded.</del>
 
-<div>Bootstrap 2.0 Upgraded.</div>
-<div>Works on Django 1.3 and above.</div>
+<del>Works on Django 1.3 and above.</del>
 
 <h2>Screenshots:</h2>
 <div >
@@ -23,8 +24,8 @@
     <li>Setup django admin first, link: <a href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/">https://docs.djangoproject.com/en/dev/ref/contrib/admin/</a> .</li>
     <li>Put <code>admin_bootstrap</code> directory in your project directory or elsewhere in your <code>sys.path</code>.</li>
     <li>Add <code>admin_bootstrap</code> to <code>INSTALLED_APPS</code> in <code>settings.py</code>, before <code>django.contrib.admin</code>.</li>
-    <li>Modify <code>STATIC_ROOT</code> to <code>YOUR_PROJECT_ROOT/admin_bootstrap/static</code></li>
-    <li>Run <code>./manage.py collectstatic</code>(requested to collect static files at the destination location as <code>STATIC_ROOT</code>.)</li>
+    <li>Modify <code>STATIC_ROOT</code> to <code>YOUR_PROJECT_ROOT/admin_bootstrap/static</code>.</li>
+    <li>Run <code>./manage.py collectstatic</code>(requested to collect static files at the destination location as <code>STATIC_ROOT</code>).</li>
 </ol>
 
 <h2>Customize Bootstrap</h2>
