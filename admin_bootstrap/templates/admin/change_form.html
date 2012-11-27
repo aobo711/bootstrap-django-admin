@@ -3,13 +3,13 @@
 {% load url from future %}
 
 {% block extrahead %}{{ block.super }}
-    <script type="text/javascript">window.__admin_media_prefix__ = "{% admin_media_prefix %}";</script>
+    <script type="text/javascript">window.__admin_media_prefix__ = "{{ STATIC_URL }}/admin/";</script>
 {% url 'admin:jsi18n' as jsi18nurl %}
 <script type="text/javascript" src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
 {{ media }}
 {% endblock %}
 
-{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/forms.css" />{% endblock %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/admin/css/forms.css" />{% endblock %}
 
 {% block coltype %}{% if ordered_objects %}colMS{% else %}colM{% endif %}{% endblock %}
 
