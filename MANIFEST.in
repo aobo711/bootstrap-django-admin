@@ -1,0 +1,2 @@
+recursive-include admin_bootstrap/static *
+recursive-include admin_bootstrap/templates *
