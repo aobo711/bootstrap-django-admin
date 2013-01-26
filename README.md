@@ -1,6 +1,7 @@
 <h2>Beautiful Django admin template styled with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></h2>
-<div>Supprots Django 1.4+ </div>
+<div>Works with Django 1.5</div>
 <div>Bootstrap 2.2 Upgraded.</div>
+<del>Supports Django 1.4+ </del>
 <del>Bootstrap 2.0 Upgraded.</del>
 
 <del>Works on Django 1.3 and above.</del>
