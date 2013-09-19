@@ -38,8 +38,8 @@
 {% if not is_popup %}
   {% block breadcrumbs %}
     <ul class="breadcrumb">
-        <li><a href="../../">{% trans "Home" %}</a> <span class="divider">/</span></li>
-        <li><a href="../">{{ app_label|capfirst }}</a> <span class="divider">/</span></li>
+        <li><a href="../../">{% trans "Home" %}</a> </li>
+        <li><a href="../">{{ app_label|capfirst }}</a> </li>
         <li class="active">{{ cl.opts.verbose_name_plural|capfirst }}</li>
     </ul>
   {% endblock %}

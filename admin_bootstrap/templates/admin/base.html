@@ -18,9 +18,9 @@
         <div class="navbar navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">
-				<a class="brand" href="/">{% trans 'Home' %}</a>
+				<a class="navbar-brand" href="/">{% trans 'Home' %}</a>
                     <div class="nav-collapse">
-                        <ul class="nav">
+                        <ul class="nav navbar-nav">
                             <li id="welcome" class="active">
                                 <a href="/admin"> {% trans 'Welcome,' %} {% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}</a>
                             </li>
@@ -71,7 +71,7 @@
             
             {% block breadcrumbs %}
             <ul class="breadcrumb">
-                <li><a href="/">{% trans 'Home' %}</a> <span class="divider">/</span></li>
+                <li><a href="/">{% trans 'Home' %}</a> </li>
                 <li class="active">{% if title %} {{ title }}{% endif %}</li>
             </ul>
             {% endblock %}

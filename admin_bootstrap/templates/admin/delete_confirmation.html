@@ -3,10 +3,10 @@
 
 {% block breadcrumbs %}
 <ul class="breadcrumb">
-    <li><a href="../../../../">{% trans "Home" %}</a> <span class="divider">/</span></li>
-    <li><a href="../../../">{{ app_label|capfirst }}</a> <span class="divider">/</span></li>
-    <li><a href="../../">{{ opts.verbose_name_plural|capfirst }}</a> <span class="divider">/</span></li>
-    <li><a href="../">{{ object|truncatewords:"18" }}</a> <span class="divider">/</span></li>
+    <li><a href="../../../../">{% trans "Home" %}</a> </li>
+    <li><a href="../../../">{{ app_label|capfirst }}</a></li>
+    <li><a href="../../">{{ opts.verbose_name_plural|capfirst }}</a></li>
+    <li><a href="../">{{ object|truncatewords:"18" }}</a></li>
     <li class="active">{% trans 'Delete' %}</li>
 </ul>
 {% endblock %}

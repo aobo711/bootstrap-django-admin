@@ -4,10 +4,10 @@
 {% block breadcrumbs %}
 
 <ul class="breadcrumb">
-    <li><a href="../../../../">{% trans 'Home' %}</a> <span class="divider">/</span></li>
-    <li><a href="../../../">{{ app_label|capfirst }}</a> <span class="divider">/</span></li>
-    <li><a href="../../">{{ module_name }}</a> <span class="divider">/</span></li>
-    <li><a href="../">{{ object|truncatewords:"18" }}</a> <span class="divider">/</span></li>
+    <li><a href="../../../../">{% trans 'Home' %}</a> </li>
+    <li><a href="../../../">{{ app_label|capfirst }}</a></li>
+    <li><a href="../../">{{ module_name }}</a></li>
+    <li><a href="../">{{ object|truncatewords:"18" }}</a></li>
     <li class="active">{% trans 'History' %}</li>
 </ul>
 {% endblock %}

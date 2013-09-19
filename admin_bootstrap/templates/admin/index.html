@@ -28,10 +28,10 @@
                 <td width="20%">
                  <div data-toggle="buttons-checkbox" class="btn-group">
                      {% if model.perms.add %}
-                     <a href="{{ model.admin_url }}add/" class="btn">{% trans 'Add' %}</a>
+                     <a href="{{ model.admin_url }}add/" class="btn btn-default">{% trans 'Add' %}</a>
                      {% endif %}
                      {% if model.perms.change %}
-                     <a href="{{ model.admin_url }}" class="btn">{% trans 'Change' %}</a>
+                     <a href="{{ model.admin_url }}" class="btn btn-default">{% trans 'Change' %}</a>
                      {% endif %}
                  </div>
                 </td>
