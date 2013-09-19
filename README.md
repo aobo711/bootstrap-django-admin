@@ -1,14 +1,14 @@
 
 
-<h2>Beautiful Django admin template styled with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></h2>
+<h3>Beautiful Django admin template styled with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 3</a></h3>
 
-<div>Bootstrap 3 Upgraded.</div>
-
-<del>Works on Django 1.5.</del>
+<h4>Changes</h4>
+<div>Bootstrap 3 Upgraded</div>
+<div>Supports Django 1.5</div>
 
 <h2>Screenshots:</h2>
 <div >
-    
+
     <img src="https://lh5.googleusercontent.com/-YPSx9j0czfg/T2v-QhxTbZI/AAAAAAAAABc/YLo_5nRp6Zo/s433/login.png" />
     <br />
     <img src="https://lh4.googleusercontent.com/-Oc1soVl6QF0/UDcW3OpYwFI/AAAAAAAAAFA/E22PV_sbH24/s741/login.png" />
