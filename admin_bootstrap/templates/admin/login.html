@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block extrastyle %}{{ block.super }}
-<link rel="stylesheet" type="text/css" href="/admins/css/login.css" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/login.css" />
 {% endblock %}
 
 {% block branding %}{% endblock %}
@@ -30,7 +30,7 @@
     </p>
     {% endfor %}
     {% endif %}
-    <section class="hero-unit login-form">
+    <section class="hero-unit login-form well">
         <h3 class="title">{% trans 'Django administration' %}</h3>
         <form action="{{ app_path }}" method="post">
             {% csrf_token %}

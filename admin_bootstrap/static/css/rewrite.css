@@ -4,6 +4,9 @@ ul,ol{
 .navbar-inner{
     border-radius: 0;
 }
+.nav-collapse{
+    float:right;
+}
 .main{
     width:90%;
     margin:20px auto;

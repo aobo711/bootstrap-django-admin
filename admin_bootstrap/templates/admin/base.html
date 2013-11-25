@@ -18,7 +18,7 @@
         <div class="navbar navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">
-				<a class="navbar-brand" href="/">{% trans 'Home' %}</a>
+                <a class="navbar-brand" href="/">{% trans 'Home' %}</a>
                     <div class="nav-collapse">
                         <ul class="nav navbar-nav">
                             <li id="welcome" class="active">
@@ -55,7 +55,7 @@
         {% block userlinks %}{% endblock %}
 
         {% block mainbody %}
-        <div class="main {% block coltype %}colM{% endblock %}">
+        <div class="container {% block coltype %}colM{% endblock %}">
 
             {% if messages %}
             <div class="alert alert-success">

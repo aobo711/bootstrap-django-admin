@@ -4,7 +4,7 @@
     
 }
 .login-form{
-    width:263px;
+    width:363px;
     padding:20px 20px 20px 50px;
     margin:0 auto 0;
 }
@@ -12,7 +12,20 @@
     margin-bottom:10px;
 }
 .login-form form{
-    margin:0;
+    margin:30px 0 0;
+}
+.login-form label{
+    color: #666;
+    font-weight:normal;
+    width: 90px;
+    text-align:right;
+    padding-right:10px;
+}
+.form-row{
+    margin: 10px 0;
+}
+.submit-row{
+    margin:10px 0 0 95px;
 }
 .errorlist{
     margin:0;

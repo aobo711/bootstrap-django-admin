@@ -1,10 +1,7 @@
 
 
-<h3>Beautiful Django admin template styled with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 3</a></h3>
-
-<h4>Changes</h4>
-<div>Bootstrap 3 Upgraded</div>
-<div>Supports Django 1.5</div>
+<h3>Django admin templates styled with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 3</a></h3>
+<div>Work with Django 1.5 and BootStrap 3</div>
 
 <h2>Screenshots:</h2>
 <div >
@@ -27,11 +24,10 @@
     <li>Setup django admin first, link: <a href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/">https://docs.djangoproject.com/en/dev/ref/contrib/admin/</a> .</li>
     <li>Put <code>admin_bootstrap</code> directory in your project directory or elsewhere in your <code>sys.path</code>.</li>
     <li>Add <code>admin_bootstrap</code> to <code>INSTALLED_APPS</code> in <code>settings.py</code>, before <code>django.contrib.admin</code>.</li>
-    <li>Modify <code>STATIC_ROOT</code> to <code>YOUR_PROJECT_ROOT/admin_bootstrap/static</code>.</li>
     <li>Run <code>./manage.py collectstatic</code>(requested to collect static files at the destination location as <code>STATIC_ROOT</code>).</li>
 </ol>
 
 <h2>Customize Bootstrap</h2>
 
-<div>BootStrap css locates at <code>/admin_bootstrap/static/css</code>, rewrite styles and rebuild, you can also modify rewrite.css.</div>
+<div>BootStrap css is at <code>/admin_bootstrap/static/css</code>, rewrite styles and build yours.</div>
 
