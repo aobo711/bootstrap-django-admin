@@ -85,13 +85,13 @@
                 {% endif %}
             {% endblock %}
             <div class="row-fluid show-grid">
-                <div class="span9">
+                <div class="col-md-9">
                     {% block content %}
                         {% block object-tools %}{% endblock %}
                         {{ content }}
                     {% endblock %}
                 </div>
-                <div class="span3">
+                <div class="col-md-3">
                     {% block sidebar %}{% endblock %}
                 </div>
             </div>
